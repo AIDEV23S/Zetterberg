@@ -1,16 +1,12 @@
-# This is a sample Python script.
-
-# Press Skift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+while True:
+  print("Hej! Vi har tre abonnemang som kan passa dig!\n")
+  ofta = float(input("Hur många minuter ringer du varje månad?"))
+  if ofta < 33:
+      print(f"Du skall köpa vårt kontant erbjudande {ofta}")
+  elif ofta > 33 and ofta <= 66:
+      print(f"Du måste köpa normala erbjudandet som ligger på 6000kr för du använder {ofta} minuter i månaden")
+  else:
+      print(f"KÖP PLUS {ofta}")
+  a = input("Vill du köra igen? Y/N:    ").lower()
+  if a == "n":
+      break
