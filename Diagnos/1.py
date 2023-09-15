@@ -13,9 +13,9 @@ def primtal_mellan_2_och_n(n):
             primtal_lista.append(num)
     return primtal_lista
 
-n = int(input("Ange ett heltal mellan 1 och 99: "))
+n = int(input("Ange ett heltal mellan 1 och 9999999999: "))
 
-if 1 <= n <= 99:
+if 1 <= n <= 999999999:
     resultat = primtal_mellan_2_och_n(n)
     print(f"Primtal mellan 2 och {n}: {resultat}")
 else:
